@@ -23,7 +23,7 @@ const statSlice = createSlice({
   initialState,
   reducers: {
     updateStat: (state, action: PayloadAction<Partial<StatState>>) => {
-      return { ...state, ...action.payload }; // Update only the provided fields
+      return { ...state, ...action.payload }; 
     },
   },
 });

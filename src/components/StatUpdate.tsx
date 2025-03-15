@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { updateStat } from "../redux/statSlice"; // Adjust the import path as necessary
+import { updateStat } from "../redux/statSlice";
 
 export default function StatUpdate() {
     const [buttonActive, setButtonActive] = useState(false);

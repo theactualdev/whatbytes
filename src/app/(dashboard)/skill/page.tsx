@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import { RootState } from "@/redux/store"; // Ensure this is the correct path to your Redux store
+import { RootState } from "@/redux/store"; 
 import StatUpdate from "@/components/StatUpdate";
 import Image from "next/image";
 import {
@@ -165,12 +165,12 @@ export default function Skill() {
               <PieChart width={200} height={250}>
                 <Pie
                   data={[
-                    { name: "Correct", value: stat.score, fill: "#4caf50" }, // Green for correct
+                    { name: "Correct", value: stat.score, fill: "#4caf50" },
                     {
                       name: "Incorrect",
                       value: 15 - stat.score,
                       fill: "#f44336",
-                    }, // Red for incorrect
+                    },
                   ]}
                   dataKey="value"
                   nameKey="name"
